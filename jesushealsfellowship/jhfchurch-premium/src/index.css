@@ -1,0 +1,15 @@
+@import './styles/tailwind.css';
+
+/* Global styles */
+/* Remove all @apply rules. Use Tailwind classes in your JSX instead. */
+
+/* Fade-in animation for scroll-based sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
