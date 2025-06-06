@@ -2,6 +2,7 @@
   "name": "jhfchurch-premium",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://srisritP2.github.io/jhf-about-us/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
