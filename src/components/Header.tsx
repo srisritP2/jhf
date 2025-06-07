@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-// Navigation links for the header
+// Navigation links for the header (now scroll to section IDs)
 const navLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/worship', label: 'Worship' },
-  { to: '/testimonies', label: 'Testimonies' },
-  { to: '/prayer', label: 'Prayer' },
-  { to: '/contact', label: 'Contact' },
+  { to: 'hero', label: 'Home' },
+  { to: 'worship', label: 'Worship' },
+  { to: 'testimonies', label: 'Testimonies' },
+  { to: 'prayer', label: 'Prayer' },
+  { to: 'contact', label: 'Contact' },
 ];
+
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 /**
  * Header component with responsive navigation and logo.
@@ -22,7 +28,6 @@ const Header: React.FC = () => {
         <header className="bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 shadow-lg sticky top-0 z-50">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8">
                 {/* Logo and site title */}
-                {/* Logo and site title visually grouped for branding */}
                 <div className="flex items-center gap-3 mb-2 md:mb-0 text-white">
                   <span className="mr-2 flex items-center" aria-label="JHF Logo">
                     {/* Red Christian cross: vertical bar longer, horizontal bar shorter and higher, only cross is red */}
@@ -55,12 +60,13 @@ const Header: React.FC = () => {
                     <ul className="flex flex-wrap justify-center md:justify-end gap-4 text-lg">
                         {navLinks.map((link) => (
                           <li key={link.to}>
-                            <Link
-                              to={link.to}
-                              className="hover:text-yellow-200 text-white transition font-semibold focus:outline focus:ring-2 focus:ring-yellow-200 px-2 py-1 rounded-md duration-200"
+                            <button
+                              type="button"
+                              onClick={() => scrollToSection(link.to)}
+                              className="hover:text-yellow-200 text-white transition font-semibold focus:outline focus:ring-2 focus:ring-yellow-200 px-2 py-1 rounded-md duration-200 bg-transparent border-none cursor-pointer"
                             >
                               {link.label}
-                            </Link>
+                            </button>
                           </li>
                         ))}
                     </ul>
@@ -72,13 +78,13 @@ const Header: React.FC = () => {
                     <ul className="flex flex-col items-center gap-2 py-4">
                       {navLinks.map((link) => (
                         <li key={link.to}>
-                          <Link
-                            to={link.to}
-                            className="block px-6 py-2 text-lg text-white hover:text-yellow-200 font-semibold focus:outline focus:ring-2 focus:ring-yellow-200 duration-200"
-                            onClick={() => setMenuOpen(false)}
+                          <button
+                            type="button"
+                            onClick={() => { scrollToSection(link.to); setMenuOpen(false); }}
+                            className="block px-6 py-2 text-lg text-white hover:text-yellow-200 font-semibold focus:outline focus:ring-2 focus:ring-yellow-200 duration-200 bg-transparent border-none cursor-pointer"
                           >
                             {link.label}
-                          </Link>
+                          </button>
                         </li>
                       ))}
                     </ul>

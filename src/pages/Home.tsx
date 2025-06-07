@@ -19,25 +19,25 @@ const Home: React.FC = () => {
         <div className="flex flex-col min-h-screen items-center bg-gray-50">
             <main className="flex-grow w-full flex flex-col items-center">
                 {/* Hero Section */}
-                <div className="w-full flex justify-center">
+                <div id="hero" className="w-full flex justify-center">
                   <div className="w-full max-w-5xl px-2 md:px-0">
                     <HeroSection />
                   </div>
                 </div>
                 {/* Worship Times */}
-                <div className="w-full flex justify-center mt-[-3rem] z-10">
+                <div id="worship" className="w-full flex justify-center mt-[-3rem] z-10">
                   <div className="w-full max-w-5xl px-2 md:px-0">
                     <WorshipTimes />
                   </div>
                 </div>
                 {/* Miraculous Healings/Testimonies Section */}
-                <div className="w-full flex justify-center mt-12">
+                <div id="testimonies" className="w-full flex justify-center mt-12">
                   <div className="w-full max-w-5xl px-2 md:px-0">
                     <TestimoniesCarousel />
                   </div>
                 </div>
                 {/* Prayer Team/Request Prayer Section (2-column grid) */}
-                <div className="w-full flex justify-center mt-12">
+                <div id="prayer" className="w-full flex justify-center mt-12">
                   <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Placeholder for Prayer Team/Ministry visual */}
                     <div className="bg-green-50 rounded-xl shadow p-8 flex flex-col items-center justify-center min-h-[260px]">
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
                   </div>
                 </div>
                 {/* Contact Section (2-column grid: info + map) */}
-                <div className="w-full flex justify-center mt-12">
+                <div id="contact" className="w-full flex justify-center mt-12">
                   <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <ContactInfo />
