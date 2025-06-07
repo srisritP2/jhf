@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jhf-about-us/static/css/main.871dc32f.css",
+    "main.js": "/jhf-about-us/static/js/main.378ce4aa.js",
+    "static/media/jhfimage.jpg": "/jhf-about-us/static/media/jhfimage.15211918361cb4aaa97c.jpg",
+    "index.html": "/jhf-about-us/index.html",
+    "main.871dc32f.css.map": "/jhf-about-us/static/css/main.871dc32f.css.map",
+    "main.378ce4aa.js.map": "/jhf-about-us/static/js/main.378ce4aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.871dc32f.css",
+    "static/js/main.378ce4aa.js"
+  ]
+}
