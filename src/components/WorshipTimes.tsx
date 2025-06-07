@@ -26,26 +26,27 @@ const WorshipTimes: React.FC = () => {
                     {/* Sunday Morning Service */}
                     <div className="bg-gradient-to-br from-blue-100 to-white border-l-4 border-blue-500 shadow-md rounded-xl p-8 min-w-[220px]">
                         <MusicIcon />
-                        <h3 className="text-xl font-bold mb-2 text-blue-800">Sunday Morning<br/>8:30 AM</h3>
-                        <p className="text-gray-700">Worship & Word Service</p>
+                        <h3 className="text-xl font-bold mb-2 text-blue-800">Sunday Morning<br/>9:30 AM</h3>
+                        <p className="text-gray-700">Worship & Sermon Service</p>
                     </div>
                     {/* Sunday Evening Service */}
                     <div className="bg-gradient-to-br from-blue-100 to-white border-l-4 border-blue-500 shadow-md rounded-xl p-8 min-w-[220px]">
                         <MusicIcon />
                         <h3 className="text-xl font-bold mb-2 text-blue-800">Sunday Evening<br/>6:00 PM</h3>
                         <p className="text-gray-700">Healing & Deliverance Service</p>
+                        <p className="text-gray-700">Prayers for Individuals</p>
                     </div>
                     {/* Wednesday Night Service */}
                     <div className="bg-gradient-to-br from-purple-100 to-white border-l-4 border-purple-500 shadow-md rounded-xl p-8 min-w-[220px]">
                         <MusicIcon />
-                        <h3 className="text-xl font-bold mb-2 text-purple-800">Wednesday Night<br/>7:00 PM</h3>
-                        <p className="text-gray-700">Bible Study & Prayer</p>
+                        <h3 className="text-xl font-bold mb-2 text-purple-800">Friday Night<br/>7:00 PM</h3>
+                        <p className="text-gray-700">Fasting Prayer and Service</p>
                     </div>
                     {/* Friday Night Service */}
                     <div className="bg-gradient-to-br from-pink-100 to-white border-l-4 border-pink-500 shadow-md rounded-xl p-8 min-w-[220px]">
                         <MusicIcon />
-                        <h3 className="text-xl font-bold mb-2 text-pink-800">Friday Night<br/>7:30 PM</h3>
-                        <p className="text-gray-700">Worship Night</p>
+                        <h3 className="text-xl font-bold mb-2 text-pink-800">Branch Church Sunday Morning<br/>8:00 AM</h3>
+                        <p className="text-gray-700">Worship and Service</p>
                     </div>
                 </div>
             </div>
