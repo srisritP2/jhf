@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jhf/static/css/main.871dc32f.css",
+    "main.css": "/jhf/static/css/main.64d48110.css",
     "main.js": "/jhf/static/js/main.80ce6490.js",
     "static/media/jhfimage.jpg": "/jhf/static/media/jhfimage.15211918361cb4aaa97c.jpg",
     "static/media/pastor.jpg": "/jhf/static/media/pastor.31532b39ec9f599b9d5c.jpg",
     "index.html": "/jhf/index.html",
-    "main.871dc32f.css.map": "/jhf/static/css/main.871dc32f.css.map",
+    "main.64d48110.css.map": "/jhf/static/css/main.64d48110.css.map",
     "main.80ce6490.js.map": "/jhf/static/js/main.80ce6490.js.map"
   },
   "entrypoints": [
-    "static/css/main.871dc32f.css",
+    "static/css/main.64d48110.css",
     "static/js/main.80ce6490.js"
   ]
 }
