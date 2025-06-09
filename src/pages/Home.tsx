@@ -16,7 +16,7 @@ import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
 const Home: React.FC = () => {
     useFadeInOnScroll();
     return (
-        <div className="flex flex-col min-h-screen items-center bg-gray-50">
+        <div className="flex flex-col min-h-screen items-center bg-gradient-to-b from-blue-50 via-purple-50 to-indigo-100">
             <main className="flex-grow w-full flex flex-col items-center">
                 {/* Hero Section */}
                 <div id="hero" className="w-full flex justify-center">
@@ -54,10 +54,10 @@ const Home: React.FC = () => {
                 {/* Contact Section (2-column grid: info + map) */}
                 <div id="contact" className="w-full flex justify-center mt-12">
                   <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
+                    <div className="h-96 flex items-stretch"> {/* Match height to DirectionsMap */}
                       <ContactInfo />
                     </div>
-                    <div>
+                    <div className="h-96 flex items-stretch"> {/* Match height to DirectionsMap */}
                       <DirectionsMap />
                     </div>
                   </div>
