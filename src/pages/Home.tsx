@@ -16,7 +16,7 @@ import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
 const Home: React.FC = () => {
     useFadeInOnScroll();
     return (
-        <div className="flex flex-col min-h-screen items-center bg-gradient-to-b from-blue-50 via-purple-50 to-indigo-100">
+        <div className="flex flex-col min-h-screen items-center">
             <main className="flex-grow w-full flex flex-col items-center">
                 {/* Hero Section */}
                 <div id="hero" className="w-full flex justify-center">
@@ -25,22 +25,22 @@ const Home: React.FC = () => {
                   </div>
                 </div>
                 {/* Worship Times */}
-                <div id="worship" className="w-full flex justify-center mt-[-3rem] z-10">
+                <div id="worship" className="w-full flex justify-center mt-12 z-10">
                   <div className="w-full max-w-5xl px-2 md:px-0">
                     <WorshipTimes />
                   </div>
                 </div>
                 {/* Miraculous Healings/Testimonies Section */}
                 <div id="testimonies" className="w-full flex justify-center mt-12">
-                  <div className="w-full max-w-5xl px-2 md:px-0">
+                  <div className="w-full max-w-5xl px-2 md:px-0 bg-gradient-to-br from-[#f8fafc] via-[#e0c3fc] to-[#c3cfe2] rounded-2xl shadow-xl py-8 md:py-12 my-8">
                     <TestimoniesCarousel />
                   </div>
                 </div>
                 {/* Prayer Team/Request Prayer Section (2-column grid) */}
                 <div id="prayer" className="w-full flex justify-center mt-12">
-                  <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-br from-[#e0c3fc] via-[#f5f7fa] to-[#c3cfe2] rounded-2xl shadow-xl py-8 md:py-12 my-8">
                     {/* Placeholder for Prayer Team/Ministry visual */}
-                    <div className="bg-green-50 rounded-xl shadow p-8 flex flex-col items-center justify-center min-h-[260px]">
+                    <div className="bg-white/80 rounded-xl shadow p-8 flex flex-col items-center justify-center min-h-[260px]">
                       <span className="text-6xl mb-4">💚</span>
                       <div className="text-xl font-semibold text-center mb-4">[Prayer Team Ministering]</div>
                       <div className="text-3xl font-bold text-green-700">24</div>
@@ -53,11 +53,11 @@ const Home: React.FC = () => {
                 </div>
                 {/* Contact Section (2-column grid: info + map) */}
                 <div id="contact" className="w-full flex justify-center mt-12">
-                  <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="h-96 flex items-stretch"> {/* Match height to DirectionsMap */}
+                  <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-br from-[#c3cfe2] via-[#f5f7fa] to-[#e0c3fc] rounded-2xl shadow-xl py-8 md:py-12 my-8">
+                    <div className="h-96 flex items-stretch">
                       <ContactInfo />
                     </div>
-                    <div className="h-96 flex items-stretch"> {/* Match height to DirectionsMap */}
+                    <div className="h-96 flex items-stretch">
                       <DirectionsMap />
                     </div>
                   </div>

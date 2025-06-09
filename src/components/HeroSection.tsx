@@ -16,22 +16,39 @@ const HeroSection: React.FC = () => {
         src={jhfimage}
         alt="Jesus Heals Fellowship background"
         className="absolute inset-0 w-full h-full object-cover z-0 select-none pointer-events-none rounded-b-3xl"
-        style={{ objectPosition: 'center 15%' }}
+        style={{ objectPosition: 'top center', filter: 'brightness(0.97) saturate(1.15)' }}
         draggable="false"
         aria-hidden="true"
       />
-      {/* Bottom-only gradient overlay for image */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 rounded-b-3xl" aria-hidden="true" />
+      {/* Premium radiant gradient blur overlay at bottom */}
+      <div
+        className="absolute left-0 bottom-0 w-full"
+        style={{
+          height: '32%',
+          background: 'linear-gradient(0deg, rgba(255,255,255,0.97) 60%, rgba(99,102,241,0.18) 90%, transparent 100%)',
+          backdropFilter: 'blur(32px)',
+          WebkitBackdropFilter: 'blur(32px)',
+          zIndex: 15,
+          borderBottomLeftRadius: '1.5rem',
+          borderBottomRightRadius: '1.5rem',
+        }}
+        aria-hidden="true"
+      />
       {/* Content: no glassmorphism, no white background, only text and button */}
-      <div className="relative z-20 flex flex-col items-center justify-center w-full max-w-2xl mx-auto px-6 py-10 md:py-20">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-center text-white drop-shadow-xl">
-          {/* Welcome to <span className="whitespace-nowrap">JHF Church</span> */}
+      {/* Move the welcome text and subtext to the bottom, above the button, on the radiant blur */}
+      <div className="absolute left-0 bottom-20 w-full flex flex-col items-center z-30 pointer-events-none">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-2 leading-tight text-center drop-shadow-xl pointer-events-auto" style={{ color: '#000957' }} id="hero-welcome-text">
+          Welcome
         </h1>
-        <p className="text-xl md:text-2xl mb-10 font-medium text-white drop-shadow-lg text-center">
-          {/* Join us in our journey of faith and community. */}
+        <p className="text-xl md:text-2xl mb-4 font-medium drop-shadow-lg text-center pointer-events-auto" style={{ color: '#000957' }} id="hero-welcome-subtext">
+          Experience faith, healing, and community with us every week.
         </p>
-        <Button
-          className="text-lg px-10 py-4 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold rounded-full shadow-lg transition duration-300 animate-bounce focus:outline focus:ring-2 focus:ring-yellow-300"
+      </div>
+      {/* Move the button to the very bottom, on the radiant blur */}      <div
+        className="absolute left-0 bottom-0 w-full flex justify-center pb-2 z-40"
+        style={{ pointerEvents: 'none' }}
+      >        <Button
+          className="pointer-events-auto text-lg md:text-xl px-14 py-4 bg-[#344CB7] backdrop-blur-md text-blue-700 font-bold rounded-full shadow-1xl transition-all duration-300 animate-bounce focus:outline-none focus:ring-4 focus:ring-blue-200 tracking-wide drop-shadow-lg border-4 border-white/20 ring-2 ring-white/30 hover:bg-[#23337a]"
           onClick={() => alert('Get Involved Clicked!')}
           aria-label="Get Involved"
         >

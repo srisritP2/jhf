@@ -17,10 +17,10 @@ const MusicIcon = () => (
 
 const WorshipTimes: React.FC = () => {
     return (
-        <section className="py-8 bg-white rounded-2xl shadow-lg my-8 fade-in-section" aria-label="Worship Times">
+        <section className="py-8 bg-gradient-to-br from-[#f8fafc] via-[#e0c3fc] to-[#c3cfe2] rounded-2xl shadow-lg my-12 fade-in-section" aria-label="Worship Times">
             <div className="container mx-auto text-center">
                 {/* Section heading */}
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-blue-700">Worship With Us</h2>
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-blue-700 tracking-tight leading-tight drop-shadow-md">Worship With Us</h2>
                 {/* Service cards */}
                 <div className="flex flex-col md:flex-row justify-center gap-8">
                     {/* Sunday Morning Service */}

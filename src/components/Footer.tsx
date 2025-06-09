@@ -15,7 +15,7 @@ const SocialIcon = ({ href, label, children }: { href: string; label: string; ch
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 py-8 mt-12 text-white shadow-inner">
+        <footer className="bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 py-8 mt-12 text-white shadow-inner border-t-4 border-[#e0c3fc]">
             <div className="container mx-auto text-center flex flex-col items-center">
                 {/* Copyright */}
                 <p className="mb-3 font-semibold drop-shadow text-lg">&copy; {new Date().getFullYear()} JHF Church. All rights reserved.</p>

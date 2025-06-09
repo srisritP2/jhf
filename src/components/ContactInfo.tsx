@@ -8,9 +8,9 @@ import React from 'react';
  */
 const ContactInfo: React.FC = () => {
     return (
-        <div className="bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-xl my-8 max-w-lg mx-auto text-center border-t-4 border-blue-400 fade-in-section" aria-label="Contact Information">
+        <div className="bg-gradient-to-br from-white via-[#e0c3fc] to-[#c3cfe2] p-10 rounded-2xl shadow-xl my-12 max-w-lg mx-auto text-center border-t-4 border-blue-400 fade-in-section" aria-label="Contact Information">
             {/* Section heading */}
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-blue-700">Contact Us</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-blue-700 tracking-tight leading-tight drop-shadow-md">Contact Us</h2>
             {/* Email */}
             <p className="mb-2 text-lg"><strong>Email:</strong> <span className="text-blue-600">info@jhfchurch.org</span></p>
             {/* Phone */}
