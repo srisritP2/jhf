@@ -6,6 +6,7 @@ import PrayerRequestForm from '../components/PrayerRequestForm';
 import ContactInfo from '../components/ContactInfo';
 import DirectionsMap from '../components/DirectionsMap';
 import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
+import PastorInfo from '../components/PastorInfo';
 
 /**
  * Home page with modern, grid-based alignment and clear section separation.
@@ -60,6 +61,12 @@ const Home: React.FC = () => {
                     <div className="h-96 flex items-stretch">
                       <DirectionsMap />
                     </div>
+                  </div>
+                </div>
+                     {/* Pastor Info */}
+                <div id="worship" className="w-full flex justify-center mt-12 z-10">
+                  <div className="w-full max-w-5xl px-2 md:px-0">
+                    <PastorInfo/>
                   </div>
                 </div>
             </main>

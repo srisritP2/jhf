@@ -1,0 +1,86 @@
+Sorry to hear about your dad — hope he’s doing okay and gets better soon.
+
+Hi Ritesh,
+
+I hope you're doing well!
+
+I'm reaching out from India, where I'm currently building a team of experienced professionals who are looking for remote, part-time opportunities. If there are any relevant openings within your network, I’d truly appreciate it if you could help connect them.
+
+One of our key profiles includes:
+
+Automation Test Engineer / Manual (Functional) Test Engineer with over 10 years of experience in the QA domain.
+
+I’d be happy to share their resume for your consideration.
+
+Please let me know if there's a chance we can collaborate, or if you’d be open to a quick chat.
+
+Best regards,
+Sri Sherwin
+
+
+Remote/Part-Time Opportunities for Experienced QA Professionals
+
+
+==========================================================================================================================
+To remove the myself directory from the remote GitHub repo (https://github.com/srisritP2/jhf-about-us.git), follow these steps in PowerShell:
+
+Clone the repository (if you haven't already):
+
+Remove the myself directory:
+
+Commit and push the change:
+
+If your default branch is not main, replace main with your branch name.
+
+Summary:
+
+Clone the repo
+Remove the directory
+Commit and push the change
+Let me know if you need a script for a different shell or more help!
+
+=========================================================================================================================
+git add src/App.tsx
+
+git commit -m "refactor: remove React Router, render Home directly for single-page app"
+
+git push origin master
+
+git add src/components/WorshipTimes.tsx
+git commit -m "Update worship timings and add Healing & Deliverance Service and Prayers for Individuals lines"
+git push origin master
+
+
+Get-Process | Where-Object {$_.MainWindowTitle -like '*localhost*'} | Stop-Process
+
+
+===========================================================================================
+To push your latest build and changes to your GitHub repo and deploy to GitHub Pages, follow these steps:
+
+1. Build your React app (if using Create React App):
+npm run build
+
+
+2. Add, commit, and push your changes:
+git add .
+git commit -m "Deploy: latest premium UI/UX, hero, worship section, and theme updates"
+git push
+
+3. If you use the gh-pages branch for deployment (common for Create React App), deploy with:
+npm install -g gh-pages
+npm run build
+gh-pages -d build
+
+
+Or, if your package.json has a deploy script:
+
+npm run deploy
+
+4. Wait a minute, then refresh your site at https://srisritp2.github.io/jhf/ (use a private/incognito window to avoid cache).
+
+If you use GitHub Actions for deployment:
+
+Go to your repo’s Actions tab and make sure the latest workflow runs and succeeds.
+If it fails, check the logs for errors.
+
+==========================================================================================================================================
